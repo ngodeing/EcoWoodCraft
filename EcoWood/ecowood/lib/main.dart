@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'green_page.dart';
+import 'camera_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              '../build/flutter_assets/images/kayu.png',
+              '../../lib/src/images/kayu.png',
               height: 120.0,
               width: 120.0,
             ),
@@ -57,15 +58,6 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const GreenPage()),
-                );
-              },
-              child: Text('Go to Green Page'),
-            ),
           ],
         ),
       ),
