@@ -1,3 +1,4 @@
+import 'package:ecowood/login_page.dart';
 import 'package:flutter/material.dart';
 import 'green_page.dart';
 
@@ -32,7 +33,7 @@ class MyHomePage extends StatelessWidget {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const GreenPage()),
+        MaterialPageRoute(builder: (context) =>  LoginPage()),
       );
     });
 
@@ -43,7 +44,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              '../build/flutter_assets/images/kayu.png',
+              '../image/Group 20.jpg',
               height: 120.0,
               width: 120.0,
             ),
@@ -61,7 +62,7 @@ class MyHomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const GreenPage()),
+                  MaterialPageRoute(builder: (context) =>  LoginPage()),
                 );
               },
               child: Text('Go to Green Page'),
