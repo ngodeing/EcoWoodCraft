@@ -1,3 +1,4 @@
+import 'package:ecowood/login_page.dart';
 import 'package:flutter/material.dart';
 import 'green_page.dart';
 import 'camera_page.dart';
@@ -33,7 +34,7 @@ class MyHomePage extends StatelessWidget {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const GreenPage()),
+        MaterialPageRoute(builder: (context) =>  LoginPage()),
       );
     });
 
