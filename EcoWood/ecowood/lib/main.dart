@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecowood/result_page.dart';
+import 'package:ecowood/home_page.dart';
 
 
 void main() {
@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => ResultPage()),
+        MaterialPageRoute(builder: (context) => HomePage()),
       );
     });
 
