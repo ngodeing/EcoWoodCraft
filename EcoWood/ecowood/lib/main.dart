@@ -35,7 +35,7 @@ class MyHomePage extends StatelessWidget {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) =>  GreenPage()),
+        MaterialPageRoute(builder: (context) =>  HomePage()),
       );
     });
 

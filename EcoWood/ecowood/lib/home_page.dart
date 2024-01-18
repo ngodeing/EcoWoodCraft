@@ -57,23 +57,22 @@ class _HomePageState extends State<HomePage> {
             child: Stack(
               children: [
                 // Background Image
-                Image.asset(
-                  '../image/Header.jpeg', // Ganti dengan path gambar yang benar
-                  width: MediaQuery.of(context).size.width,
-                  height: 175,
-                  fit: BoxFit.cover
+                Opacity(
+                  opacity: 0.2,
+                  child: Image.asset(
+                      '../image/Header.jpeg', // Ganti dengan path gambar yang benar
+                      width: MediaQuery.of(context).size.width,
+                      height: 175,
+                      fit: BoxFit.cover),
                 ),
-
                 // Content on top of the image
                 Column(
-                  
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                        
                           child: Center(
                             child: Image.asset(
                               '../image/Question.png',
@@ -81,7 +80,8 @@ class _HomePageState extends State<HomePage> {
                               height: 14,
                             ),
                           ),
-                          margin:  EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 10),
+                          margin: EdgeInsets.only(
+                              top: 15, left: 15, right: 15, bottom: 10),
                           width: 18,
                           height: 18,
                           decoration: ShapeDecoration(
@@ -90,7 +90,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         Container(
-                          margin:  EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 10),
+                          margin: EdgeInsets.only(
+                              top: 15, left: 15, right: 15, bottom: 10),
                           child: Image.asset(
                             '../image/VIP.png',
                             width: 18,
@@ -102,7 +103,8 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       children: [
                         Container(
-                          margin:  EdgeInsets.only(top: 15, left: 45, right: 20, bottom: 10),
+                          margin: EdgeInsets.only(
+                              top: 15, left: 45, right: 20, bottom: 10),
                           child: Center(
                             child: Image.asset('../image/User.png'),
                           ),
