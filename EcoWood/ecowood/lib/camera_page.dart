@@ -52,7 +52,7 @@ class _CameraPageState extends State<CameraPage> {
             Navigator.of(context).pop();
           },
           child: Image.asset(
-            '../../lib/src/images/x.png',
+            '../image/x.png',
             width: 30.0,
             height: 30.0,
           ),
@@ -61,13 +61,13 @@ class _CameraPageState extends State<CameraPage> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Image.asset(
-              '../../lib/src/images/flash.png',
+              '../image/flash.png',
               width: 30.0,
               height: 30.0,
             ),
             const SizedBox(width: 40.0),
             Image.asset(
-              '../../lib/src/images/hdr.png',
+              '../image/hdr.png',
               width: 30.0,
               height: 30.0,
             ),
@@ -76,32 +76,38 @@ class _CameraPageState extends State<CameraPage> {
       ),
       body: Stack(
         children: [
-          FutureBuilder<void>(
-            future: _initializeControllerFuture,
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.done) {
-                return AspectRatio(
-                  aspectRatio: _controller.value.aspectRatio,
-                  child: CameraPreview(_controller),
-                );
-              } else {
-                return const Center(
-                  child: CircularProgressIndicator(),
-                );
-              }
-            },
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 180.0,
+            child: AspectRatio(
+              aspectRatio: 3 / 4, // Fixed aspect ratio (width / height)
+              child: FutureBuilder<void>(
+                future: _initializeControllerFuture,
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.done) {
+                    return CameraPreview(_controller);
+                  } else {
+                    return const Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
+                },
+              ),
+            ),
           ),
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: const EdgeInsets.only(bottom: 80.0),
+              padding: const EdgeInsets.only(bottom: 60.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Image.asset(
-                    '../../lib/src/images/switch.png',
-                    width: 40.0,
-                    height: 40.0,
+                    '../image/switch.png',
+                    width: 30.0,
+                    height: 30.0,
                   ),
                   FloatingActionButton(
                     onPressed: () async {
@@ -128,9 +134,9 @@ class _CameraPageState extends State<CameraPage> {
                     ),
                   ),
                   Image.asset(
-                    '../../lib/src/images/galery.png',
-                    width: 40.0,
-                    height: 40.0,
+                    '../image/galery.png',
+                    width: 30.0,
+                    height: 30.0,
                   ),
                 ],
               ),

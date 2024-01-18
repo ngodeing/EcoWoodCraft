@@ -1,8 +1,6 @@
 import 'package:ecowood/home_page.dart';
 import 'package:ecowood/login_page.dart';
-import 'package:flutter/material.dart';
-import 'green_page.dart';
-import 'camera_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -46,7 +44,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              '../../lib/src/images/kayu.png',
+              '../image/kayu.png',
               height: 120.0,
               width: 120.0,
             ),
