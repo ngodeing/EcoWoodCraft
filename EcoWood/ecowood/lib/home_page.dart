@@ -1,6 +1,7 @@
 import 'dart:js';
 
 import 'package:ecowood/camera_page.dart';
+import 'package:ecowood/result_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,6 +26,11 @@ class _HomePageState extends State<HomePage> {
           break;
         case 1:
           // History page
+           Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => ResultPage(),
+            ),
+          );
           break;
         case 2:
           // Camera page
@@ -408,14 +414,6 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.camera_alt),
             label: 'Camera',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.question_answer),
-            label: 'Ask',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
           ),
         ],
       ),
