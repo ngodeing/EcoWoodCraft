@@ -1,5 +1,5 @@
 import 'package:ecowood/components/Text_field.dart';
-import 'package:ecowood/components/button.dart';
+import 'package:ecowood/components/button.dart' as MyButton;
 import 'package:ecowood/components/button_google.dart';
 import 'package:ecowood/login_page.dart';
 import 'package:flutter/material.dart';
@@ -162,7 +162,7 @@ class SignUpPage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Button(nameAuth: 'Sign Up',),
+                MyButton.Button(nameAuth: 'Sign Up',),
                 const SizedBox(
                   height: 15,
                 ),

@@ -1,24 +1,52 @@
 import 'package:ecowood/components/Text_field.dart';
-import 'package:ecowood/components/button.dart';
 import 'package:ecowood/components/button_google.dart';
 import 'package:ecowood/signUp_page.dart';
 import 'package:flutter/material.dart';
+import 'home_page.dart';
+
+class Button extends StatelessWidget {
+  final String nameAuth;
+  final VoidCallback onTap;
+
+  Button({required this.nameAuth, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: onTap as void Function()?,
+      child: Text(nameAuth),
+    );
+  }
+}
 
 class LoginPage extends StatelessWidget {
-  LoginPage({super.key});
+  LoginPage({Key? key});
 
-  // final usernameController = TextEditingController();
-  // final passwordController = TextEditingController();
-  void signUserIn() {}
+  void signUserIn(BuildContext context) {
+    // Add your sign-in logic here if needed
+    // For now, let's just navigate to HomePage
+    navigateToHomePage(context);
+  }
+
   void forgotPassword() {}
+
+  void navigateToHomePage(BuildContext context) {
+    // Use Navigator to push the HomePage onto the navigation stack
+    // This assumes you have a HomePage class or widget defined
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => HomePage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-            child: Center(
-                child: Column(
-          children: [
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
             Container(
               margin: EdgeInsets.only(
                 top: 45,
@@ -140,11 +168,14 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Button(nameAuth: 'Sign In',),
+                 Button(
+                nameAuth: 'Sign In',
+                onTap: () => signUserIn(context), // Pass context here
+              ),
                 const SizedBox(
                   height: 15,
                 ),
-                ButtonGoogle(onTap: signUserIn, nameAuth: 'Sign In With Google',),
+                ButtonGoogle(onTap: () => signUserIn(context), nameAuth: 'Sign In With Google',),
                 const SizedBox(
                   height: 20,
                 ),

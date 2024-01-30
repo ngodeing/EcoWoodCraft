@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:ecowood/camera_page.dart';
 import 'package:flutter/material.dart';
 
