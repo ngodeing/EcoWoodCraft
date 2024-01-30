@@ -29,7 +29,7 @@ class ButtonGoogle extends StatelessWidget {
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 10),
                child : Image.asset(
-                '../image/Vector.png',
+                'image/Vector.png',
                 height: 20.0,
                 width: 20.0,
               ),

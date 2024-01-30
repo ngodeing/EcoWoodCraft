@@ -24,7 +24,7 @@ class SignUpPage extends StatelessWidget {
                 left: 40,
               ),
               child: Image.asset(
-                '../image/Daun.png',
+                'image/Daun.png',
                 height: 20.0,
                 width: 20.0,
               ),
@@ -83,7 +83,7 @@ class SignUpPage extends StatelessWidget {
                   // controller: usernameController,
                   hintText: 'Name',
                   obsecureText: false,
-                  image: '../image/Name.png',
+                  image: 'image/Name.png',
                   showVisibilityIcon: false,
                 ),
                 SizedBox(
@@ -111,7 +111,7 @@ class SignUpPage extends StatelessWidget {
                   // controller: usernameController,
                   hintText: 'Email',
                   obsecureText: true,
-                  image: '../image/Email.png',
+                  image: 'image/Email.png',
                   showVisibilityIcon: false,
                 ),
                 SizedBox(
@@ -139,7 +139,7 @@ class SignUpPage extends StatelessWidget {
                   // controller: usernameController,
                   hintText: 'Password',
                   obsecureText: true,
-                  image: '../image/Password.png',
+                  image: 'image/Password.png',
                   
                 ),
                 Padding(

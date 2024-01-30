@@ -18,9 +18,52 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.1
 
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "image/ecowoodIcon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "image/ecowoodIcon.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "image/ecowoodIcon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "image/ecowoodIcon.png"
+
 flutter:
   assets:
-     - image/
+    - image/carakerja.png
+    - image/Customize.png
+    - image/Daun.png
+    - image/Email.png
+    - image/flash.png
+    - image/galery.png
+    - image/Group 20.jpg
+    - image/hasil.png
+    - image/hdr.png
+    - image/Header.jpeg
+    - image/Import_image.png
+    - image/kayu.png
+    - image/kayuasal.png
+    - image/Name.png
+    - image/Password.png
+    - image/Picture.png
+    - image/Question.png
+    - image/result.png
+    - image/retake.png
+    - image/Smart_scan.png
+    - image/switch.png
+    - image/User.png
+    - image/Vector.png
+    - image/VIP.png
+    - image/x.png
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

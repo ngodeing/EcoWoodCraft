@@ -44,7 +44,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              '../image/kayu.png',
+              'image/kayu.png',
               height: 120.0,
               width: 120.0,
             ),

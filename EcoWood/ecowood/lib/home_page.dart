@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                 Opacity(
                   opacity: 0.2,
                   child: Image.asset(
-                      '../image/Header.jpeg', // Ganti dengan path gambar yang benar
+                      'image/Header.jpeg', // Ganti dengan path gambar yang benar
                       width: MediaQuery.of(context).size.width,
                       height: 175,
                       fit: BoxFit.cover),
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                         Container(
                           child: Center(
                             child: Image.asset(
-                              '../image/Question.png',
+                              'image/Question.png',
                               width: 14,
                               height: 14,
                             ),
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                           margin: EdgeInsets.only(
                               top: 15, left: 15, right: 15, bottom: 10),
                           child: Image.asset(
-                            '../image/VIP.png',
+                            'image/VIP.png',
                             width: 18,
                             height: 18,
                           ),
@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                           margin: EdgeInsets.only(
                               top: 15, left: 45, right: 20, bottom: 10),
                           child: Center(
-                            child: Image.asset('../image/User.png'),
+                            child: Image.asset('image/User.png'),
                           ),
                           // margin: EdgeInsets.only(left: 30, top: 40),
                           width: 65,
@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset(
-                              '../image/Smart_scan.png',
+                              'image/Smart_scan.png',
                               width: 38,
                               height: 38,
                             ),
@@ -192,7 +192,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset(
-                              '../image/Import_image.png',
+                              'image/Import_image.png',
                               width: 38,
                               height: 38,
                             ),
@@ -213,7 +213,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Image.asset(
-                              '../image/Customize.png',
+                              'image/Customize.png',
                               width: 38,
                               height: 38,
                             ),
@@ -261,7 +261,7 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     Image.asset(
-                      '../image/Picture.png',
+                      'image/Picture.png',
                       width: 45,
                       height: 45,
                     ),
@@ -304,7 +304,7 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     Image.asset(
-                      '../image/Picture.png',
+                      'image/Picture.png',
                       width: 45,
                       height: 45,
                     ),
@@ -347,7 +347,7 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     Image.asset(
-                      '../image/Picture.png',
+                      'image/Picture.png',
                       width: 45,
                       height: 45,
                     ),

@@ -4,17 +4,17 @@ class ResultPage extends StatelessWidget {
   // Array objek dengan link gambar dan deskripsi
   final List<Map<String, String>> resultData = [
     {
-      'image': '../image/kayuasal.png',
+      'image': 'image/kayuasal.png',
       'description':
           'Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif.',
     },
     {
-      'image': '../image/carakerja.png',
+      'image': 'image/carakerja.png',
       'description':
           'Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif.',
     },
     {
-      'image': '../image/hasil.png',
+      'image': 'image/hasil.png',
       'description':
           'Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif. Deskripsi Result yang panjang dan informatif.',
     },
@@ -59,7 +59,7 @@ class ResultPage extends StatelessWidget {
               Align(
                 alignment: Alignment.center,
                 child: Image.asset(
-                  '../image/result.png',
+                  'image/result.png',
                   width: 200.0,
                   height: 200.0,
                 ),
@@ -72,7 +72,7 @@ class ResultPage extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.center,
                   child: Image.asset(
-                    '../image/retake.png',
+                    'image/retake.png',
                     width: 100.0,
                     height: 100.0,
                   ),

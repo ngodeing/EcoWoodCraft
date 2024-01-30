@@ -52,7 +52,7 @@ class _CameraPageState extends State<CameraPage> {
             Navigator.of(context).pop();
           },
           child: Image.asset(
-            '../image/x.png',
+            'image/x.png',
             width: 30.0,
             height: 30.0,
           ),
@@ -61,13 +61,13 @@ class _CameraPageState extends State<CameraPage> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Image.asset(
-              '../image/flash.png',
+              'image/flash.png',
               width: 30.0,
               height: 30.0,
             ),
             const SizedBox(width: 40.0),
             Image.asset(
-              '../image/hdr.png',
+              'image/hdr.png',
               width: 30.0,
               height: 30.0,
             ),
@@ -105,7 +105,7 @@ class _CameraPageState extends State<CameraPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Image.asset(
-                    '../image/switch.png',
+                    'image/switch.png',
                     width: 30.0,
                     height: 30.0,
                   ),
@@ -134,7 +134,7 @@ class _CameraPageState extends State<CameraPage> {
                     ),
                   ),
                   Image.asset(
-                    '../image/galery.png',
+                    'image/galery.png',
                     width: 30.0,
                     height: 30.0,
                   ),

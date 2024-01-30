@@ -53,7 +53,7 @@ class LoginPage extends StatelessWidget {
                 left: 40,
               ),
               child: Image.asset(
-                '../image/Daun.png',
+                'image/Daun.png',
                 height: 20.0,
                 width: 20.0,
               ),
@@ -112,7 +112,7 @@ class LoginPage extends StatelessWidget {
                   // controller: usernameController,
                   hintText: 'Email',
                   obsecureText: false,
-                  image: '../image/Email.png',
+                  image: 'image/Email.png',
                   showVisibilityIcon: false,
                 ),
                 SizedBox(
@@ -140,7 +140,7 @@ class LoginPage extends StatelessWidget {
                   // controller: usernameController,
                   hintText: 'Password',
                   obsecureText: true,
-                  image: '../image/Password.png',
+                  image: 'image/Password.png',
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
